@@ -198,10 +198,10 @@ cat << EOFEOF >> conf/auto.conf
 INHERIT += "buildstats buildstats-summary"
 
 # archive sources for target recipes (for license compliance)
-INHERIT += "archiver"
-COPYLEFT_RECIPE_TYPES = "target"
-ARCHIVER_MODE[src] = "original"
-ARCHIVER_MODE[diff] = "1"
+#INHERIT += "archiver"
+#COPYLEFT_RECIPE_TYPES = "target"
+#ARCHIVER_MODE[src] = "original"
+#ARCHIVER_MODE[diff] = "1"
 EOFEOF
 
 if [ $(ls ../sstate-cache | wc -l) -ne 0 ] ; then
